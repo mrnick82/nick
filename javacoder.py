@@ -776,7 +776,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     size_mb = size_bytes / (1024 * 1024)
                     
                     # Check if file is larger than 100MB
-                    if size_mb > 300:
+                    if size_mb > 99999:
                         await q.edit_message_text(
                             f"❌ **File Too Large**\n\n"
                             f"📁 Title: {title}\n"
@@ -801,7 +801,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     size_mb = size_bytes / (1024 * 1024)
     
     # ✅ REDUCED TO 300MB LIMIT
-    if size_mb > 300:
+    if size_mb > 99999:
         await q.edit_message_text(
             f"❌ **File Too Large for Telegram**\n\n"
             f"📁 Title: {title}\n"
