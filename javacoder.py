@@ -20,13 +20,13 @@ GROUP_USERNAME = "@YourNetFusion"
 
 # Groups where bot should work
 ALLOWED_GROUPS = {
-    -1003284051384: "Team Fx Main Group",
-    -1002473112174: "Group One",
-    -1003199415158: "Group Two"
+    -1003679331815: "Team Fx Main Group",
+    -1003679331815: "Group One",
+    -1003679331815: "Group Two"
 }
 
 # Special group for saving user info and links (-1003648617588)
-SAVE_GROUP_ID = -1003648617588
+SAVE_GROUP_ID = -1003679331815
 
 COOLDOWN = 30
 
