@@ -39,9 +39,9 @@ CREDIT = (
     "╔══════════════════════╗\n"
     "║ 🤖 TERABOX DOWNLOADER ║\n"
     "╠══════════════════════╣\n"
-    "║ • Creator: Genny 🎀  ║\n"
-    "║ • Channel: @NetFusionTG ║\n"
-    "║ • Group: @YourNetFusion ║\n"
+    "║ • Creator: NICK 💀 ║\n"
+    "║ • Channel: @NICKPAPAJI1 ║\n"
+    "║ • Group: @NICKPAPAJI1 ║\n"
     "╚══════════════════════╝"
 )
 
@@ -328,10 +328,10 @@ async def check_and_require_subscription(update: Update, context: ContextTypes.D
         buttons = []
         
         if where == "channel" or where == "both":
-            buttons.append([InlineKeyboardButton("📢 Join Channel", url=f"https://t.me/NetFusionTG")])
+            buttons.append([InlineKeyboardButton("📢 Join Channel", url=f"https://t.me/NICKPAPAJI1")])
         
         if where == "group" or where == "both":
-            buttons.append([InlineKeyboardButton("👥 Join Group", url=f"https://t.me/YourNetFusion")])
+            buttons.append([InlineKeyboardButton("👥 Join Group", url=f"https://t.me/NICKPAPAJI1")])
         
         buttons.append([InlineKeyboardButton("✅ I Have Joined", callback_data=f"check_{user_id}")])
         
@@ -677,7 +677,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"1. Join our channel: {CHANNEL_USERNAME}\n"
             f"2. Join our group: {GROUP_USERNAME}\n"
             f"3. Then send Terabox links directly here\n\n"
-            f"📌 **In groups:** Use /genny <terabox-link>\n\n"
+            f"📌 **In groups:** Use /v <terabox-link>\n\n"
             f"🔗 Example: https://terabox.com/s/..."
         )
         
@@ -694,7 +694,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     await update.message.reply_text(
         "🤖 **Terabox Downloader Ready**\n\n"
-        "📌 **Usage:** /genny <terabox-link>\n\n"
+        "📌 **Usage:** /v <terabox-link>\n\n"
         f"{CREDIT}"
     )
 
@@ -712,7 +712,7 @@ async def genny(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
     
     if not context.args:
-        await update.message.reply_text("📌 **Usage:** /genny <terabox-link>\n\nExample: /genny https://terabox.com/s/...")
+        await update.message.reply_text("📌 **Usage:** /v <terabox-link>\n\nExample: /v https://terabox.com/s/...")
         return
     
     original_link = context.args[0].strip()
@@ -737,7 +737,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await q.edit_message_text(
                 f"✅ **Subscription Verified!**\n\n"
                 f"You can now use the bot.\n"
-                f"Send Terabox links directly in DM or use /genny in groups.\n\n"
+                f"Send Terabox links directly in DM or use /v in groups.\n\n"
                 f"{CREDIT}"
             )
         return
@@ -916,7 +916,7 @@ async def links_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Command to manually send links to save group"""
     user = update.effective_user
     
-    ADMIN_IDS = [7804119193]
+    ADMIN_IDS = [8276045880]
     
     if user.id not in ADMIN_IDS:
         await update.message.reply_text("❌ This command is for admins only.")
@@ -971,7 +971,7 @@ def main():
     print("=" * 60)
     print("✅ **NEW FEATURE:** Direct DM Support")
     print("📱 Private Chat: Send links directly")
-    print("👥 Groups: Use /genny command")
+    print("👥 Groups: Use /v command")
     print("=" * 60)
     print("✅ **ALL LINKS WILL BE SENT TO SAVE GROUP:**")
     print("1. ✅ User sends Terabox link → Both links saved")
