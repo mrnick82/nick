@@ -15,12 +15,12 @@ if not BOT_TOKEN:
 API_BASE = "https://teradl.tiiny.io/"
 
 # Channel and group for mandatory subscription
-CHANNEL_USERNAME = "@NetFusionTG"
-GROUP_USERNAME = "@YourNetFusion"
+CHANNEL_USERNAME = "@NICKPAPAJI1"
+GROUP_USERNAME = "@NICKPAPAJI1"
 
 # Groups where bot should work
 ALLOWED_GROUPS = {
-    -1003679331815: "Team Fx Main Group",
+    -1003679331815: "PRIVATE GC",
     -1003679331815: "Group One",
     -1003679331815: "Group Two"
 }
@@ -853,7 +853,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🤖 **Terabox Downloader Bot Help**\n\n"
         "📌 **Available Commands:**\n"
         "/start - Start the bot\n"
-        "/genny <link> - Download terabox link (in groups)\n"
+        "/v <link> - Download terabox link (in groups)\n"
         "/help - Show this help message\n"
         "/info - Show your information\n\n"
         "📌 **How to use:**\n"
